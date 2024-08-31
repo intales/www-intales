@@ -1,19 +1,21 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: 'JetBrains Mono';
+    background-color: #000;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
     font-weight: 100;
     margin: 0;
-    padding: 350px;
+    padding: 350px 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    text-align: center;
 }
 
 .logo {
-    font-family: 'JetBrains Mono';
     font-size: 62px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 64px;
 }
 
@@ -22,41 +24,35 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 130px;
     text-align: center;
-    position: relative;
-    top: 0px;
-}
-
-.content {
-    text-align: center;
 }
 
 .content p {
     font-size: 26px;
     margin-bottom: 45px;
+    line-height: 1.5;
 }
 
 .highlight-container {
-    position: relative;
     display: inline-block;
+    transition: background-color 1.3s ease;
 }
 
 .highlight {
-    color: white;
+    color: #fff;
     background-color: transparent;
-    transition: background-color 1.3s ease;
     padding: 2px 3px;
     border-radius: 6px;
 }
 
 .highlight-container:hover .highlight {
-    background-color: red;
+    background-color: #f00;
 }
 
 .highlight-link {
-    color: white;
+    color: inherit;
     text-decoration: none;
 }
 
 .highlight-link:hover .highlight {
-    background-color: red;
+    background-color: #f00;
 }
